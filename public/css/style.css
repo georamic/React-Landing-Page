@@ -208,15 +208,18 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: url(../img/intro-bg.png) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+
+  
 }
+
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(101, 118, 139, 0.7) 100%);
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
@@ -257,7 +260,7 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #6372ff 0%, #5aa5f6 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
@@ -603,4 +606,12 @@ label {
   #about img {
     margin: 50px 0;
   }
+}
+.white-link {
+  color: white;
+  text-decoration: none; /* optional: removes underline */
+}
+
+.white-link:hover {
+  color: #ddd; /* optional: softer hover */
 }

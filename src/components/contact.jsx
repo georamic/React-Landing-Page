@@ -24,11 +24,11 @@ export const Contact = (props) => {
     {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
     
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm("service_nub0dfp", "template_zpfaa8r", e.target, "-IxX7pFzXDm-Ksx0j") 
       .then(
         (result) => {
           console.log(result.text);
-          clearState();
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);
@@ -101,20 +101,7 @@ export const Contact = (props) => {
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
               <h3>Contact Info</h3>
-              <p>
-                <span>
-                  <i className="fa fa-map-marker"></i> Address
-                </span>
-                {props.data ? props.data.address : "loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-phone"></i> Phone
-                </span>{" "}
-                {props.data ? props.data.phone : "loading"}
-              </p>
+              
             </div>
             <div className="contact-item">
               <p>
@@ -124,10 +111,19 @@ export const Contact = (props) => {
                 {props.data ? props.data.email : "loading"}
               </p>
             </div>
+            <div className="contact-item">
+              <p>
+                <span>
+                  <i className="fa fa-newspaper-o"></i><a href="https://pranikkoirala.kit.com/0e0872c420" class="white-link">Newsletter</a>
+                </span>{" "}
+                {props.data ? props.data.phone : "loading"}
+              </p>
+            </div>
           </div>
           <div className="col-md-12">
             <div className="row">
               <div className="social">
+                {/*
                 <ul>
                   <li>
                     <a href={props.data ? props.data.facebook : "/"}>
@@ -145,6 +141,7 @@ export const Contact = (props) => {
                     </a>
                   </li>
                 </ul>
+                */}
               </div>
             </div>
           </div>
@@ -153,10 +150,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
+            &copy; 2025 Georamic. Towards Accessible Geospatial Intelligence.
           </p>
         </div>
       </div>

@@ -5,10 +5,9 @@ export const Services = (props) => {
     <div id="services" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Our Services</h2>
+          <h2>Our Tools</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Explore our tools.
           </p>
         </div>
         <div className="row">
@@ -16,9 +15,15 @@ export const Services = (props) => {
             ? props.data.map((d, i) => (
                 <div key={`${d.name}-${i}`} className="col-md-4">
                   {" "}
+                  <a href={d.link} target="_blank" rel="noopener noreferrer">
                   <i className={d.icon}></i>
+                  </a>
                   <div className="service-desc">
-                    <h3>{d.name}</h3>
+                    <h3>
+                      <a href={d.link} target="_blank" rel="noopener noreferrer"style={{ color: "white", textDecoration: "none" }}>
+                        {d.name}
+                      </a>
+                    </h3>
                     <p>{d.text}</p>
                   </div>
                 </div>
